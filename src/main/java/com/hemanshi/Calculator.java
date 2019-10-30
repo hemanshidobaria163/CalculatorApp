@@ -15,9 +15,14 @@ public class Calculator {
   Substraction sub = new Substraction();
 
   public static void main(String[] args) throws Exception {
-
     Calculator calculator = new Calculator();
-    calculator.askForInput();
+
+    if(args.length == 3){
+      calculator.calculate(args[0]+" "+args[1]+" "+args[2]);
+    }else{
+      calculator.askForInput();
+    }
+
   }
 
   void askForInput() throws Exception {

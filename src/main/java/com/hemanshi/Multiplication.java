@@ -13,8 +13,5 @@ public class Multiplication implements Operation {
   @Override public void verifyArguments(String left, String right) throws Exception {
     parseFloat(left);
     parseFloat(right);
-    if( parseFloat(right) == 0 || parseFloat(left) == 0){
-      throw new Exception("Can not multiply by 0!");
-    }
   }
 }
